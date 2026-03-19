@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental Management System - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #e6e6e6;
+        }
+
+        /* Top Header */
+        .header {
+            background-color: #f4b400;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logout-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: darkred;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #f4b400;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 20px;
+        }
+
+        .menu-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .menu-btn:hover {
+            background-color: #ddd;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background-color: #f2f2f2;
+        }
+
+        .main-content h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Car Cards */
+        .card-container {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 230px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .card h4 {
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Car Rental Management System Admin Panel</h1>
+        <button class="logout-btn">Logout</button>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <button class="menu-btn">Dashboard</button>
+            <button class="menu-btn">Add Car</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Available Cars</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/230x130" alt="BMW">
+                    <h4>BMW Sedan</h4>
+                    <p>BMW</p>
+                    <p class="price">Rs. 15000.00 / day</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/230x130" alt="Kia">
+                    <h4>Kia Rio</h4>
+                    <p>Kia</p>
+                    <p class="price">Rs. 6000.00 / day</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/230x130" alt="Mercedes">
+                    <h4>Mercedes SUV</h4>
+                    <p>Mercedes</p>
+                    <p class="price">Rs. 20000.00 / day</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/230x130" alt="Peugeot">
+                    <h4>Red Peugeot</h4>
+                    <p>Peugeot</p>
+                    <p class="price">Rs. 8000.00 / day</p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
